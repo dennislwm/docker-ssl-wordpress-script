@@ -1,5 +1,5 @@
-Project to automate deploment of a docker container with ssl (Let's Encrypt) and Wordpress.
-Tested on Ubuntu 18.04
+#Project to automate deploment of a docker container with ssl (Let's Encrypt) and Wordpress.
+*Tested on Ubuntu 18.04*
 
 
 1. Copy project into dir (/opt/docker)
