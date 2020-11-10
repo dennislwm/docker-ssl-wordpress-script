@@ -6,10 +6,14 @@ This project automates most of the dirty work to setup a lamp server running doc
 To use this script, you must be running a base Ubuntu Server 18.04 with docker and docker-compose. Update via sudo apt update && sudo apt upgrade, then follow the steps below.
 
 
-1. Copy project into dir (/opt/docker)
-2. Edit init-letsencrypt.sh -- replace "yourdomain.com" with domain (1 instance)
-3. Edit nginx/conf.d/default.conf -- replace "yourdomain.com"with domain (4 instances)
-5. Add user to wordpress group and execute script
+1. Copy or clone project into dir (/opt/docker)
+	- git clone https://github.com/DreamPCs/docker-ssl-wordpress-script.git
+2. Edit init-letsencrypt.sh
+	- Replace "yourdomain.com" with domain (1 instance)
+	- Insert your email between quoation marks where asked (normally line 11) (Optional but recommended)
+3. Edit nginx/conf.d/default.conf
+	- Replace "yourdomain.com"with domain (4 instances)
+5. Add user to wordpress group and execute script (copy and paste next 5 lines)
 	- useradd -u 1500 app
 	- usermod -aG docker app
 	- chown app:app -R wordpress
