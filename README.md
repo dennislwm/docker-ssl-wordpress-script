@@ -11,6 +11,7 @@ To use this script, you must be running a base Ubuntu Server 18.04 with docker a
 2. Edit init-letsencrypt.sh
 	- Replace "yourdomain.com" with domain (1 instance)
 	- Insert your email between quoation marks where asked (normally line 11) (Optional but recommended)
+		If you ENTERED an email, please see note below!
 3. Edit nginx/conf.d/default.conf
 	- Replace "yourdomain.com"with domain (4 instances)
 5. Add user to wordpress group and execute script (copy and paste next 5 lines)
@@ -19,4 +20,6 @@ To use this script, you must be running a base Ubuntu Server 18.04 with docker a
 	- chown app:app -R wordpress
 	- chmod +x init-letsencrypt.sh
 	- ./init-letsencrypt.sh
+	- **Note!: If you entered an email, while the script is running it will ask if you wish to share anonymous information with the EFF, please answer Yes or No. 
+	- **If you did NOT enter an email, this question will NOT come up.
 6. Finish Wordpress installation at domain.
